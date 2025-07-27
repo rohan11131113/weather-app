@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/rohan11131113/weather-app.git'
+                git branch: 'main', url:'https://github.com/rohan11131113/weather-app.git'
             }
         }
 
