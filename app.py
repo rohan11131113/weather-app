@@ -23,3 +23,6 @@ def index():
         else:
             weather['error'] = "City not found!"
     return render_template('index.html', weather=weather)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5001)
